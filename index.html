@@ -1,0 +1,128 @@
+<!--
+      .--.
+    .'_\/_'.
+    '. /\ .'
+      "||"
+       || /\
+    /\ ||//\)
+   (/\\||/
+______\||/_______
+Created with love by Serendipiware
+-->
+<!DOCTYPE html>
+<html class="scroll-smooth">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link rel="icon" type="image/x-icon" href="./src/assets/fav.ico">
+    <title>Sparkly Georgia</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="./src/animations.css">
+    <script src="./src/script.js" defer></script>
+</head>
+<body class="bg-defaultBackground">
+    <div id="heroSection" class="bg-backgroundBannerImage bg-cover bg-left bg-fixed h-heroSectionHeight ">
+        <header class="py-5">
+            <div id="header" class="bg-headerBackground w-11/12 md:w-10/12 lg:w-8/12 2xl:w-8/12 h-16 backdrop-blur-sm px-10 mx-auto flex justify-between items-center rounded-full slide-in-top">
+                <div id="navigationLogo">
+                    <img src="./src/assets/logo.svg" alt="Sparkly Georgia Logo Letters" class="min-w-7">
+                </div>
+                <nav>
+                    <div id="navigationMenu" class="hidden md:block">
+                        <ul class="flex">
+                            <li class="m-5 text-white"><a href="#channelInfoSection">Το κανάλι</a></li>
+                            <li class="m-5 text-white cursor-pointer" onclick="goToChannel()"><span>Περιεχόμενο</span></li>
+                            <li class="m-5 text-white"><a href="#contactSection">Επικοινωνία</a></li>
+                            <li class="m-5 text-white cursor-pointer" onclick="goToSerendipiware()"><span>Πολιτική απορρήτου</span></li>
+                        </ul>
+                    </div>
+                    <div id="navigationMenuMobileButton" class="border-white border-solid border-1 md:hidden">
+                        <img src="./src/assets/menu-11-stroke-rounded.svg" alt="">
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section>
+            <div id="heroSectionContent" class="scale-in-center">
+                <h1 class="text-sparklyGeorgia text-center text-5xl my-16 font-LilyScriptOne md:text-7xl tracking-in-expand">
+                    Sparkly Georgia
+                </h1>
+                <h2 class="text-white text-center text-xl font-bold">
+                    Όπου η περιέργεια συναντά τη δημιουργικότητα! ✨
+                </h2>
+                <div id="exploreButton" onclick="goToLinkedin()" class="w-40 my-7 mt-8 p-2 text-center text-white border-2 border-buttonBorderColor border-solid rounded-2xl cursor-pointer mx-auto transition-all duration-100 hover:bg-buttonBorderColor active:scale-95">
+                    <span class="w-full block text-base select-none">Ας γνωριστούμε!</span>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="channelStats" class="w-8/12 md:w-channelStatsWidth -mt-12 bg-backgroundChannelStatsGraph bg-cover bg-center rounded-full shadow-2xl flex justify-evenly md:justify-center items-center mx-auto p-2 md:p-3">
+        <div id="tiktokStats" class="flex items-center flex-col md:mr-10">
+            <img class="w-6 md:w-8 m-1 md:m-2" src="./src/assets/tiktok-icon.svg" alt="">
+            <div class="flex">
+                <span class="text-white font-bold">12.234</span>
+            </div>
+        </div>
+        <div id="youtubeStats" class="flex items-center flex-col md:mr-10">
+            <img class="w-6 md:w-8 m-1 md:m-2" src="./src/assets/youtube-icon.svg" alt="">
+            <div class="flex">
+                <span class="text-white font-bold">35.110</span>
+            </div>
+        </div>
+        <div id="instagramStats" class="flex items-center flex-col">
+            <div>
+                <img class="w-6 md:w-8 m-1 md:m-2" src="./src/assets/instagram-icon.svg" alt="">
+            </div>
+            <div class="flex">
+                <span class="text-white font-bold">Soon ⟳</span>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="bg-backgroundChannelSectionImage bg-fixed bg-center bg-cover h-channelInfoSection flex justify-center items-center -mt-12 mb-52" id="channelInfoSection">
+            <div class="w-10/12 lg:w-5/12 pt-64">
+                <h3 class="text-white text-center font-bold text-4xl mb-6">Το κανάλι</h3>
+                <p class="text-white md:text-lg text-center mb-6">
+                    Ανακάλυψε έναν κόσμο γεμάτο vlogs από τη ζωή μου, unboxing αγαπημένων προϊόντων, και ειδήσεις από όλο τον κόσμο, 
+                    με τον δικό μου μοναδικό τρόπο.<br><br>Εδώ, θα βρεις ποικιλία περιεχομένου που θα σε κρατήσει σε εγρήγορση και θα σε κάνει 
+                    να σκέφτεσαι! Ετοιμάσου για αυθόρμητες στιγμές, θετική ενέργεια, και μοναδικές εμπειρίες.<br><br>
+                    <span class="text-sparklyGeorgia font-bold">Κάνε subscribe και γίνε μέρος αυτής της περιπέτειας!</span>
+                </p>
+                <img src="./src/assets/recentVideos.png" class="cursor-pointer mx-auto" alt="">
+                <div class="md:w-72 mx-auto text-center">
+                    <button class="text-white bg-pink-500 px-8 py-2 rounded-xl hover:bg-pink-700 duration-100" onclick="goToRecentVideo()">Πρόσφατο βίντεο</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="contactSection" class="flex items-center flex-col bg-waveSeperator bg-cover md:w-mediumContactFormSection bg-bottom mb-20 rounded-2xl mx-auto py-11">
+            <h5 class="text-white text-3xl mb-10 md:text-4xl font-bold">Επικοινωνια/Χορηγιες</h5>
+            <form action="https://formsubmit.co/h28h6qobu@mozmail.com" method="POST" class="w-80">
+                <input type="email" name="email" placeholder="Email" required class="block mx-auto mb-1 p-2 w-80 rounded-tl-xl rounded-tr-xl">
+                <textarea name="message" id="message" required class="block mx-auto p-2 w-80 h-36 rounded-bl-xl rounded-br-xl mb-3" placeholder="Το μήνυμα σας..."></textarea>
+                <input type="checkbox" id="privacyAgreement" required>
+                <label for="privacyAgreement" class="text-white text-sm">
+                    Συμφωνώ οτι τα δεδομένα που θα εισάγω θα συλλεχθουν για σκοπούς επικοινωνίας.
+                </label>
+                <button type="submit" class="block text-white mt-5 py-1 px-4 bg-buttonBorderColor hover:bg-black transition-colors duration-100 rounded-2xl">Αποστολη</button>
+            </form>
+        </div>
+    </section>
+    <div class="bg-footerWavesBackground bg-cover bg-top w-full h-24">
+        <h6 class="text-white text-center font-SquarePegRegular text-2xl cursor-pointer" onclick="goToSerendipiware()">Created with ♡ by Serendipiware</h6>
+    </div>
+    <div id="navigationMenuMobile" class="w-full md:hidden absolute left-0 top-24 border-fuchsia-600 border-2 border-solid bg-purple-950 rounded-xl navigationMenuMobileInactive">
+        <ul>
+            <li class="m-5 text-white font-bold"><a href="#channelInfoSection">Το κανάλι</a></li>
+            <hr>
+            <li class="m-5 text-white font-bold cursor-pointer" onclick="goToChannel()"><span>Περιεχόμενο</span></li>
+            <hr>
+            <li class="m-5 text-white font-bold"><a href="#contactSection">Επικοινωνία</a></li>
+            <hr>
+            <li class="m-5 text-white font-bold cursor-pointer" onclick="goToSerendipiware()"><span>Πολιτική απορρήτου</span></li>
+        </ul>
+    </div>
+</body>
+</html>

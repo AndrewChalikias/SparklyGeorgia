@@ -1,0 +1,6 @@
+# Ignore preinstalled dependencies
+node_modules/
+
+# Logs and temporary files
+*.log
+*.tmp

@@ -1,0 +1,9 @@
+/* square-peg */
+@font-face {
+	font-family: Square Peg;
+	font-style: normal;
+	font-weight: 400;
+	font-stretch: 100%;
+	src: local("Square Peg Regular"), local("SquarePeg-Regular"), url(square-peg.woff2) format("woff2");
+}
+
